@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whack a Mole</title>
+
     <link rel="stylesheet" href="mole.css">
-    <script src="mole.js"></script>
 </head>
 <body>
+  <button id="sound-toggle" class="sound-on"></button>
     <h1>Whack a Mole</h1>
     <h2 id="score">0</h2>
     <!--- 3*3 --->
     <div id="board"></div>
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Game Over!</h2>
+    <p>Your score: <span id="final-score"></span></p>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+</div>
+<audio id="music" src="X2Download.app - _Wack-A-Mole_  Music By Dave Connor © (128 kbps).mp3" loop></audio>
+<audio id="whack-sound" src="X2Download.app - SMACK Sound Effect (128 kbps).mp3"></audio>
+<div id="game-instructions">
+  <h3>Instructions</h3>
+  <p>Whack as many moles as you can within the given unlimited time .</p>
+  <p>Points:</p>
+  <ul>
+    <li>Whack a mole: +10 points</li>
+  </ul>
+  <p>Game Over:</p>
+  <ul>
+    <li>Whack a piranha plant </li>
+  </ul>
+  <p>Good luck and have fun!</p>
+  <button id="start-game-btn">Start Game</button>
+</div>
+      <script src="mole.js"></script>
 </body>
 </html>
